@@ -1,0 +1,123 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black',times;
+    font-size: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+
+
+header nav a:hover {
+    color: #fff;
+}
+
+/**/
+
+.film-main {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)100%),url(/assets/loki.jpg);
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.film-main .description {
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+.title-film {
+    margin-top: 10%;
+    font-size:40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button {
+    background-color: rgba(0,0,0,.100);
+    border: none;
+    color: #aaa;
+    font-size: 14px;
+    margin-right: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.button i {
+    margin-right: 8px ;
+}
+
+.film-main .container {
+    margin-left: 15px;
+    width: 60%;
+}
+
+.box-films {
+   height: 100%;
+   width: 90%; 
+   display: block;  
+}
+
+@media screen and (max-width:700px) {
+    header .container {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .button {
+    margin-top: 5px;
+    width: 300px;
+    
+    }   
+}
+
+@media screen and (min-width:700px){
+    .description {
+         width: 50%;
+    }
+}
+
+.carousel-films {
+    margin-top: 5px;
+}
